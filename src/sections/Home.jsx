@@ -123,30 +123,14 @@ export default function Home() {
               <a href="#projects"
               className='px-6 py-3 rounded-full font-medium text-lg text-white bg-gradient-to-r from-[#302b63] via-[#af62c6] to-[#1cd8d2] 
               shadow-lg hover:scale-105 transition-all'>View My Work</a>
-              <button
-  onClick={async () => {
-    try {
-      const res = await fetch('/Hema_resume.pdf');
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const blob = await res.blob();
-      if (blob.type && !blob.type.includes('pdf')) {
-        // likely the server returned HTML (SPA fallback) or incorrect content-type
-        const text = await blob.text();
-        console.error('Resume fetch returned non-pdf content:', text.slice(0,200));
-        alert('Could not load resume: server returned unexpected content. Check the network response in DevTools.');
-        return;
-      }
-      const url = URL.createObjectURL(blob);
-      window.open(url, '_blank');
-    } catch (err) {
-      console.error(err);
-      alert('Failed to load resume. See console/network for details.');
-    }
-  }}
+              <a
+  href="/Hema_resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
   className='px-6 py-3 rounded-full font-medium text-lg text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transition-all'
 >
   My Resume
-</button>
+</a>
           </motion.div>
 
           <div className='mt-10 flex - gap-5 text-2xl md:text-3xl justify-center lg:justify-start'
