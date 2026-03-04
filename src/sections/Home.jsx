@@ -125,7 +125,8 @@ export default function Home() {
               shadow-lg hover:scale-105 transition-all'>View My Work</a>
               <a
   href="/Hema_resume.pdf"
-  download="Hema_S_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
   className='px-6 py-3 rounded-full font-medium text-lg text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transition-all'
 >
   My Resume
