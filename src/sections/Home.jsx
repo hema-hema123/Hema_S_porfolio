@@ -124,7 +124,7 @@ export default function Home() {
               className='px-6 py-3 rounded-full font-medium text-lg text-white bg-gradient-to-r from-[#302b63] via-[#af62c6] to-[#1cd8d2] 
               shadow-lg hover:scale-105 transition-all'>View My Work</a>
               <a
-  href="/Hema_S.pdf"
+  href="/Hema_resume.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className='px-6 py-3 rounded-full font-medium text-lg text-black bg-white hover:bg-gray-200 shadow-lg hover:scale-105 transition-all'
