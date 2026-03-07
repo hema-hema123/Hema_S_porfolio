@@ -24,7 +24,7 @@ const experiences = [
   {
 
     role: "Graduate Engineer",
-    company: "S J M institute of technology",
+    company: "S J b institute of technology",
     duration: "2023 - 2027",
     description: "Built projects including a climate dashboard, a network traffic analyzer, and an Instagram audience insights tool, showcasing skills in data visualization, networking, and backend development..",
 
